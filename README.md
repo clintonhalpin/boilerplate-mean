@@ -24,11 +24,11 @@ node server
 | PUT  | /items/:id  |
 | DELETE  | /items/:id  |
 
-# Places where I got alot this code
+# Reference 
 
-https://github.com/DaftMonk/fullstack-demo
-https://github.com/scottksmith95/beerlocker/
+* https://github.com/DaftMonk/fullstack-demo
+* https://github.com/scottksmith95/beerlocker/
 
 # Author
 
-(@clintonhalpin)[http://twitter.com/clintonhalpin]
+[@clintonhalpin](http://twitter.com/clintonhalpin)
