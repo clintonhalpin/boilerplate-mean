@@ -17,12 +17,12 @@ node server
 
 | VERB  | URL |
 | ------------- | ------------- |
-| GET  | /items  |
-| GET  | /items/:id  |
-| POST  | /items/  |
-| PATCH | /items/:id  |
-| PUT  | /items/:id  |
-| DELETE  | /items/:id  |
+| GET  | /api/items  |
+| GET  | /api/items/:id  |
+| POST  | /api/items/  |
+| PATCH | /api/items/:id  |
+| PUT  | /api/items/:id  |
+| DELETE  | /api/items/:id  |
 
 # Reference 
 
