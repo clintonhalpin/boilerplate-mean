@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('runapi', function () {
   nodemon({ 
-    script: 'api/server.js',
+    script: 'server.js',
   })
 })
 
