@@ -10,5 +10,9 @@
     "express": "^4.9.5",
     "mongoose": "^3.8.17",
     "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-nodemon": "^1.0.4"
   }
 }
