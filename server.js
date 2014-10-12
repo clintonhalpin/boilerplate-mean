@@ -1,8 +1,8 @@
-var express = require('express')
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var itemCtrl = require('./api/components/item.ctrl');
-var config = require('./config');
+var express = require('express'),
+    mongoose = require('mongoose'),
+    bodyParser = require('body-parser'),
+    itemCtrl = require('./api/components/item.ctrl'),
+    config = require('./config');
 
 // Connect to DB
 mongoose.connect('mongodb://localhost:27017/' + config.dbName );
@@ -15,6 +15,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.set('views', __dirname + config.clientDirectory);
+
+app.use(require('connect-livereload')({
+    port: 35729
+}));
 
 // /api All routers are 
 app.use('/api', apiRouter);
