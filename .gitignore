@@ -1,1 +1,5 @@
 node_modules
+client/bower_components
+npm_debug.log
+.DS_Store
+.sass-cache
