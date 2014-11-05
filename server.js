@@ -14,7 +14,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.set('views', __dirname + config.clientDirectory);
+app.set('views', __dirname + '/client/dist/');
 
 app.use(require('connect-livereload')({
     port: 35729
@@ -30,12 +30,12 @@ apiRouter.route('/items/:id').patch( itemCtrl.update );
 apiRouter.route('/items/:id').delete( itemCtrl.destroy );
 
 app.get('/', function(req, res) {
-  res.render('src/index.html');
+  res.render('index.html');
 });
 
 // 404 Page - must be the last route defined
 app.use(function(req, res, next){
-  res.render('src/404.html', 404);
+  res.render('404.html', 404);
 });
 
 app.listen(config.port, function () {
